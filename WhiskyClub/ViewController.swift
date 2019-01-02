@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var detectedWhisky: UILabel!
     @IBOutlet weak var detectedHeader: UILabel!
     
-    private let apiKey = "737fbf732dc6b088fd4db5400610c825df00cf8b"
-    private let classifierId = "WhiskyRecognizer_646540482"
-    private let version = "2017-12-07"
+    private let apiKey = "UHwnVE1tbzNz2Jd7kp-_G5ICavT5ZqW9MFSsLYNuOM9Y"
+    private let classifierId = "DefaultCustomModel_643389188"
+    private let version = "2018-01-02"
     var visualRecognition: VisualRecognition!
     
     override func viewDidLoad() {

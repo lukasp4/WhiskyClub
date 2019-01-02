@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE685A4721DD420900CCC067 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE685A4621DD420900CCC067 /* VisualRecognitionV3.framework */; };
+		BE685A4921DD456C00CCC067 /* DefaultCustomModel_643389188.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BE685A4821DD456C00CCC067 /* DefaultCustomModel_643389188.mlmodel */; };
 		E897961D2080C47600E35B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897961C2080C47600E35B93 /* AppDelegate.swift */; };
 		E897961F2080C47600E35B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897961E2080C47600E35B93 /* ViewController.swift */; };
 		E89796222080C47600E35B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89796202080C47600E35B93 /* Main.storyboard */; };
 		E89796242080C47600E35B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89796232080C47600E35B93 /* Assets.xcassets */; };
 		E89796272080C47600E35B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89796252080C47600E35B93 /* LaunchScreen.storyboard */; };
-		E897962F2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */; };
 		E89796332080D57C00E35B93 /* WhiskyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89796322080D57C00E35B93 /* WhiskyService.swift */; };
 		E89796352080D5CA00E35B93 /* whiskies.json in Resources */ = {isa = PBXBuildFile; fileRef = E89796342080D5CA00E35B93 /* whiskies.json */; };
 		E89796372080DD6800E35B93 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E89796362080DD6800E35B93 /* refresh_icon.png */; };
-		E89CA1C22081F9D30053C46B /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */; };
-		E89CA1C42081FB380053C46B /* VisualRecognitionV3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E89CA1C62081FE880053C46B /* whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = E89CA1C52081FE880053C46B /* whisky.png */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +27,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E89CA1C42081FB380053C46B /* VisualRecognitionV3.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE685A4621DD420900CCC067 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = SOURCE_ROOT; };
+		BE685A4821DD456C00CCC067 /* DefaultCustomModel_643389188.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DefaultCustomModel_643389188.mlmodel; sourceTree = "<group>"; };
 		E89796192080C47600E35B93 /* WhiskyClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskyClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E897961C2080C47600E35B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E897961E2080C47600E35B93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +42,9 @@
 		E89796232080C47600E35B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89796262080C47600E35B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89796282080C47600E35B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhiskyRecognizer_646540482.mlmodel; sourceTree = "<group>"; };
 		E89796322080D57C00E35B93 /* WhiskyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyService.swift; sourceTree = "<group>"; };
 		E89796342080D5CA00E35B93 /* whiskies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whiskies.json; sourceTree = "<group>"; };
 		E89796362080DD6800E35B93 /* refresh_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_icon.png; sourceTree = "<group>"; };
-		E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = SOURCE_ROOT; };
 		E89CA1C52081FE880053C46B /* whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whisky.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89CA1C22081F9D30053C46B /* VisualRecognitionV3.framework in Frameworks */,
+				BE685A4721DD420900CCC067 /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +79,14 @@
 		E897961B2080C47600E35B93 /* WhiskyClub */ = {
 			isa = PBXGroup;
 			children = (
-				E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */,
+				BE685A4621DD420900CCC067 /* VisualRecognitionV3.framework */,
 				E897961C2080C47600E35B93 /* AppDelegate.swift */,
 				E897961E2080C47600E35B93 /* ViewController.swift */,
-				E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */,
 				E89796202080C47600E35B93 /* Main.storyboard */,
 				E89796232080C47600E35B93 /* Assets.xcassets */,
 				E89796252080C47600E35B93 /* LaunchScreen.storyboard */,
 				E89796282080C47600E35B93 /* Info.plist */,
+				BE685A4821DD456C00CCC067 /* DefaultCustomModel_643389188.mlmodel */,
 				E89796322080D57C00E35B93 /* WhiskyService.swift */,
 				E89796342080D5CA00E35B93 /* whiskies.json */,
 				E89796362080DD6800E35B93 /* refresh_icon.png */,
@@ -173,9 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E897962F2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel in Sources */,
 				E897961F2080C47600E35B93 /* ViewController.swift in Sources */,
 				E89796332080D57C00E35B93 /* WhiskyService.swift in Sources */,
+				BE685A4921DD456C00CCC067 /* DefaultCustomModel_643389188.mlmodel in Sources */,
 				E897961D2080C47600E35B93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UAM22JDBB2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -334,7 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UAM22JDBB2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
