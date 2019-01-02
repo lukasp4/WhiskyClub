@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.detectedHeader.text = ""
-        self.visualRecognition = VisualRecognition(apiKey: apiKey, version: version)
+        self.visualRecognition = VisualRecognition(version: version, apiKey: apiKey)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -62,17 +62,10 @@ class ViewController: UIViewController {
     
     func updateModel()
     {
-        let failure = { (error: Error) in
-            print(error)
-        }
-        
-        let success = {
+        let failure = { (error: Error) in print(error) }
+        visualRecognition.updateLocalModel(classifierID: classifierId, failure: failure) {
             print("model updated")
         }
-        
-        visualRecognition.updateLocalModel(classifierID: classifierId,
-                                           failure: failure,
-                                           success: success)
     }
     
     @IBAction func updateModelTapped(_ sender: UIButton) {
@@ -97,10 +90,7 @@ class ViewController: UIViewController {
             self.showAlert("Could not classify image", alertMessage: error.localizedDescription)
         }
 
-        visualRecognition.classifyWithLocalModel(image: image,
-                                                 classifierIDs: [classifierId],
-                                                 threshold: localThreshold,
-                                                 failure: failure) { classifiedImages in
+        visualRecognition.classifyWithLocalModel(image: image, classifierIDs: [classifierId], threshold: localThreshold, failure: failure) { classifiedImages in
 
             var topClassification = ""
             if classifiedImages.images.count > 0
